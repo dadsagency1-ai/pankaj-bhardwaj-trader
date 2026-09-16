@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pankaj Bhardwaj Trader | Intraday Trading Community</title>
+
+<!-- Add your Meta Pixel ID here -->
+<script>
+  const META_PIXEL_ID = "YOUR_PIXEL_ID";
+
+  if (META_PIXEL_ID && META_PIXEL_ID !== "YOUR_PIXEL_ID") {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){
+    n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=true;n.version="2.0";
+    n.queue=[];t=b.createElement(e);t.async=true;t.src=v;
+    s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
+    }(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");
+
+    fbq("init", META_PIXEL_ID);
+    fbq("track", "PageView");
+  }
+</script>
+
+<style>
+:root{
+  --bg:#f5f8ff;
+  --card:#ffffff;
+  --text:#172238;
+  --muted:#728096;
+  --blue:#3568ff;
+  --blue-soft:#eaf0ff;
+  --border:#e3eaf5;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  padding-bottom:100px;
+}
+.container{width:min(1120px,92%);margin:auto}
+.topbar{
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  padding:20px 0;
+}
+.topbar-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+}
+.brand{font-size:20px;font-weight:900}
+.brand span{color:var(--blue)}
+.status{color:#12a477;font-size:13px;font-weight:700}
+.hero{text-align:center;padding:75px 0 55px}
+.eyebrow{
+  display:inline-block;
+  background:var(--blue-soft);
+  color:var(--blue);
+  padding:7px 14px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:800;
+  margin-bottom:20px;
+}
+h1{
+  font-size:clamp(35px,6vw,68px);
+  line-height:1.12;
+  letter-spacing:-1px;
+}
+h1 span{color:var(--blue)}
+.hero-text{
+  max-width:680px;
+  margin:22px auto;
+  color:var(--muted);
+  font-size:18px;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:16px 28px;
+  border-radius:14px;
+  background:var(--blue);
+  color:#fff!important;
+  text-decoration:none!important;
+  font-weight:800;
+  box-shadow:0 12px 28px #3568ff30;
+  transition:.2s;
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 17px 35px #3568ff45}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:20px;
+  padding:30px;
+  box-shadow:0 12px 40px #244a8010;
+}
+.icon{font-size:28px;margin-bottom:12px}
+.card h2{font-size:21px;margin-bottom:9px}
+.card p{color:var(--muted);font-size:15px}
+.join{
+  margin:65px 0 30px;
+  text-align:center;
+  padding:50px 25px;
+  border:1px solid #dbe5ff;
+  border-radius:25px;
+  background:linear-gradient(135deg,#edf2ff,#fff);
+}
+.join h2{font-size:clamp(28px,4vw,42px);margin-bottom:12px}
+.join p{color:var(--muted);margin-bottom:5px}
+.disclaimer{
+  text-align:center;
+  color:#8995a8;
+  font-size:12px;
+  max-width:850px;
+  margin:35px auto;
+}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:25px}
+.floating{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  z-index:99999;
+}
+.telegram{
+  background:#229ed9;
+  border-radius:50px;
+  border:3px solid #fff;
+  padding:15px 24px;
+  box-shadow:0 12px 30px #229ed944;
+}
+.telegram svg{width:21px;height:21px;fill:currentColor}
+@media(max-width:800px){
+  .grid{grid-template-columns:1fr}
+  .topbar-inner{flex-direction:column;align-items:flex-start}
+  .hero{padding-top:50px}
+}
+@media(max-width:600px){
+  .floating{left:12px;right:12px;bottom:12px}
+  .telegram{width:100%}
+}
+</style>
+</head>
+
+<body>
+<header class="topbar">
+  <div class="container topbar-inner">
+    <div class="brand">Pankaj Bhardwaj <span>Trader</span></div>
+    <div class="status">● Intraday Trading Community</div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">INTRADAY TRADING • MARKET LEARNING</div>
+    <h1>Trade With Clarity,<br><span>Learn With Discipline.</span></h1>
+    <p class="hero-text">
+      Join Pankaj Bhardwaj Trader’s learning-focused community for intraday
+      trading education, market awareness and trading insights.
+    </p>
+
+    <!-- Replace YOUR_TELEGRAM_LINK_HERE with your Telegram link -->
+    <a class="btn telegram-track" href="YOUR_TELEGRAM_LINK_HERE"
+       target="_blank" rel="noopener noreferrer">
+      Join Telegram Community →
+    </a>
+  </div>
+</section>
+
+<section class="container">
+  <div class="grid">
+    <div class="card">
+      <div class="icon">📊</div>
+      <h2>Market Analysis</h2>
+      <p>Educational market observations and trading concepts.</p>
+    </div>
+    <div class="card">
+      <div class="icon">⚡</div>
+      <h2>Intraday Learning</h2>
+      <p>Intraday setups, risk awareness and trading discipline.</p>
+    </div>
+    <div class="card">
+      <div class="icon">👥</div>
+      <h2>Trading Community</h2>
+      <p>Connect with people interested in learning trading.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="join">
+    <h2>Join the Community Today</h2>
+    <p>Click below to join the Telegram learning community.</p>
+
+    <!-- Replace YOUR_TELEGRAM_LINK_HERE with your Telegram link -->
+    <a class="btn telegram-track" href="YOUR_TELEGRAM_LINK_HERE"
+       target="_blank" rel="noopener noreferrer">
+      Join Now on Telegram →
+    </a>
+  </div>
+
+  <p class="disclaimer">
+    Disclaimer: This page is for educational and informational purposes only.
+    Trading involves market risk. Conduct your own research before making any
+    financial decision.
+  </p>
+</section>
+</main>
+
+<footer>© 2026 Pankaj Bhardwaj Trader. All Rights Reserved.</footer>
+
+<!-- Floating Telegram Button -->
+<div class="floating">
+  <!-- Replace YOUR_TELEGRAM_LINK_HERE with your Telegram link -->
+  <a class="btn telegram telegram-track"
+     href="YOUR_TELEGRAM_LINK_HERE"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Join Telegram Community">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M21.6 3.2 2.9 10.4c-1.3.5-1.3 1.2-.2 1.5l4.8 1.5 1.8 5.8c.2.6.1.9.7.9.5 0 .7-.2 1-.9 1.7l2.3 2.2c.5.5.9.5 1.2-.3l1.7-5 4.9 3.6c.9.5 1.5.3 1.7-.8l3.1-14.7c.3-1.4-.5-2-1.4-1.6ZM8.3 13l10.9-6.9c.5-.3 1-.1.6.2l-8.9 8-.3 3.5-1.4-4.8-1-.3Z"/>
+    </svg>
+    Join Telegram
+  </a>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  document.querySelectorAll(".telegram-track").forEach(function(button){
+    button.addEventListener("click", function(){
+      if(typeof window.fbq === "function"){
+        window.fbq("track", "Lead");
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
