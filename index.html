@@ -1,18 +1,22 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pankaj Bhardwaj Trader | Intraday Trading Community</title>
+<title>Pankaj Bhardwaj Trader | Trading Education</title>
+<meta name="description" content="Explore intraday trading concepts, market awareness, risk management and educational resources with Pankaj Bhardwaj Trader.">
 
-<!-- =========================
-     META PIXEL
-========================= -->
+<meta name="theme-color" content="#10213d">
+
+<!-- META PIXEL -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){
-n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;
+n=f.fbq=function(){
+n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)
+};
 if(!f._fbq)f._fbq=n;
 n.push=n;
 n.loaded=!0;
@@ -23,32 +27,32 @@ t.async=!0;
 t.src=v;
 s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
-}(window, document, 'script',
+}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '1449562363687527');
-fbq('track', 'PageView');
+fbq('init','4764961520402464');
+fbq('track','PageView');
 </script>
 
 <noscript>
-<img
-height="1"
-width="1"
-style="display:none"
-src="https://www.facebook.com/tr?id=1449562363687527&ev=PageView&noscript=1"
-alt=""
-/>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=4764961520402464&ev=PageView&noscript=1"
+alt="">
 </noscript>
 
 <style>
 :root{
-  --bg:#f5f8ff;
-  --card:#ffffff;
-  --text:#172238;
-  --muted:#728096;
-  --blue:#3568ff;
-  --blue-soft:#eaf0ff;
-  --border:#e3eaf5;
+  --bg:#f4f7fb;
+  --white:#ffffff;
+  --navy:#10213d;
+  --navy-light:#19365d;
+  --blue:#2864dc;
+  --blue-hover:#1d50b8;
+  --blue-soft:#eaf1ff;
+  --text:#1b2940;
+  --muted:#64748b;
+  --border:#dfe7f1;
+  --green:#15966b;
 }
 
 *{
@@ -57,69 +61,85 @@ alt=""
   padding:0;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   font-family:Arial,Helvetica,sans-serif;
   background:var(--bg);
   color:var(--text);
-  line-height:1.6;
-  padding-bottom:100px;
+  line-height:1.7;
+  padding-bottom:95px;
 }
 
 .container{
-  width:min(1120px,92%);
-  margin:auto;
+  width:min(1100px,92%);
+  margin:0 auto;
 }
 
-/* TOP BAR */
+/* HEADER */
 .topbar{
-  background:#fff;
-  border-bottom:1px solid var(--border);
-  padding:20px 0;
+  background:var(--navy);
+  color:var(--white);
+  border-bottom:3px solid var(--blue);
 }
 
 .topbar-inner{
+  min-height:76px;
   display:flex;
-  justify-content:space-between;
   align-items:center;
-  gap:15px;
+  justify-content:space-between;
+  gap:16px;
 }
 
 .brand{
-  font-size:20px;
-  font-weight:900;
+  font-size:21px;
+  font-weight:800;
+  letter-spacing:.2px;
 }
 
 .brand span{
-  color:var(--blue);
+  color:#91b8ff;
 }
 
 .status{
-  color:#12a477;
   font-size:13px;
-  font-weight:700;
+  color:#d8e5f7;
+}
+
+.status-dot{
+  color:#53d6a5;
+  margin-right:5px;
 }
 
 /* HERO */
 .hero{
+  padding:76px 0 65px;
   text-align:center;
-  padding:75px 0 55px;
+  background:
+    radial-gradient(ellipse at top,#e2ebff 0%,transparent 60%),
+    var(--bg);
 }
 
 .eyebrow{
   display:inline-block;
-  background:var(--blue-soft);
-  color:var(--blue);
-  padding:7px 14px;
+  background:var(--white);
+  border:1px solid #cbdafa;
+  color:var(--navy);
+  padding:7px 16px;
   border-radius:30px;
-  font-size:13px;
+  font-size:12px;
   font-weight:800;
-  margin-bottom:20px;
+  letter-spacing:1px;
+  margin-bottom:22px;
 }
 
 h1{
-  font-size:clamp(35px,6vw,68px);
-  line-height:1.12;
-  letter-spacing:-1px;
+  font-size:clamp(34px,6vw,62px);
+  line-height:1.15;
+  letter-spacing:-1.3px;
+  color:var(--navy);
 }
 
 h1 span{
@@ -127,157 +147,261 @@ h1 span{
 }
 
 .hero-text{
-  max-width:680px;
-  margin:22px auto;
+  max-width:690px;
+  margin:22px auto 28px;
+  font-size:17px;
   color:var(--muted);
-  font-size:18px;
 }
 
-/* BUTTON */
+/* BUTTONS */
 .btn{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  gap:9px;
-  padding:16px 28px;
-  border-radius:14px;
+  gap:10px;
+  min-height:52px;
+  padding:14px 25px;
+  border:1px solid transparent;
+  border-radius:10px;
   background:var(--blue);
-  color:#fff!important;
-  text-decoration:none!important;
-  font-weight:800;
-  box-shadow:0 12px 28px #3568ff30;
-  transition:.2s;
+  color:#fff;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:700;
+  box-shadow:0 5px 14px rgba(40,100,220,.16);
+  transition:background .2s,transform .2s;
   cursor:pointer;
 }
 
 .btn:hover{
-  transform:translateY(-3px);
-  box-shadow:0 17px 35px #3568ff45;
+  background:var(--blue-hover);
+  transform:translateY(-2px);
 }
 
-/* CARDS */
+.btn:focus-visible{
+  outline:3px solid #8bb4ff;
+  outline-offset:4px;
+}
+
+.telegram-icon{
+  width:20px;
+  height:20px;
+  fill:currentColor;
+  flex-shrink:0;
+}
+
+/* FEATURES */
+.features{
+  padding:25px 0 15px;
+}
+
+.section-heading{
+  text-align:center;
+  margin-bottom:28px;
+}
+
+.section-heading h2{
+  font-size:clamp(25px,4vw,35px);
+  color:var(--navy);
+  line-height:1.3;
+}
+
+.section-heading p{
+  color:var(--muted);
+  margin-top:8px;
+}
+
 .grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(3,minmax(0,1fr));
   gap:20px;
 }
 
 .card{
-  background:var(--card);
+  background:var(--white);
   border:1px solid var(--border);
-  border-radius:20px;
-  padding:30px;
-  box-shadow:0 12px 40px #244a8010;
+  border-radius:16px;
+  padding:27px;
+  box-shadow:0 7px 22px rgba(16,33,61,.045);
 }
 
-.icon{
-  font-size:28px;
-  margin-bottom:12px;
+.card-icon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:48px;
+  height:48px;
+  margin-bottom:16px;
+  border-radius:12px;
+  background:var(--blue-soft);
+  font-size:25px;
 }
 
-.card h2{
-  font-size:21px;
-  margin-bottom:9px;
+.card h3{
+  color:var(--navy);
+  font-size:19px;
+  margin-bottom:8px;
 }
 
 .card p{
   color:var(--muted);
-  font-size:15px;
+  font-size:14px;
+}
+
+/* MISSION AND METHOD */
+.method{
+  margin-top:38px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.method-card{
+  padding:27px;
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:16px;
+}
+
+.method-card h3{
+  color:var(--navy);
+  margin-bottom:10px;
+  font-size:20px;
+}
+
+.method-card p{
+  color:var(--muted);
+  font-size:14px;
 }
 
 /* JOIN SECTION */
 .join{
-  margin:65px 0 30px;
+  margin:55px 0 30px;
+  padding:45px 24px;
   text-align:center;
-  padding:50px 25px;
-  border:1px solid #dbe5ff;
-  border-radius:25px;
-  background:linear-gradient(135deg,#edf2ff,#fff);
+  background:var(--navy);
+  color:var(--white);
+  border-radius:18px;
 }
 
 .join h2{
-  font-size:clamp(28px,4vw,42px);
-  margin-bottom:12px;
+  font-size:clamp(27px,4vw,38px);
+  line-height:1.3;
 }
 
 .join p{
-  color:var(--muted);
-  margin-bottom:5px;
+  color:#d3deee;
+  margin:13px auto 23px;
+  max-width:600px;
+}
+
+.join .btn{
+  background:#fff;
+  color:var(--navy);
+  box-shadow:none;
+}
+
+.join .btn:hover{
+  background:#e8efff;
 }
 
 /* DISCLAIMER */
 .disclaimer{
-  text-align:center;
-  color:#8995a8;
-  font-size:12px;
   max-width:850px;
-  margin:35px auto;
+  margin:30px auto;
+  color:#66758b;
+  text-align:center;
+  font-size:12px;
 }
 
 footer{
+  padding:24px 15px;
   text-align:center;
+  border-top:1px solid var(--border);
   color:var(--muted);
-  font-size:13px;
-  padding:25px;
+  font-size:12px;
+  background:#fff;
 }
 
-/* FLOATING TELEGRAM */
+/* FIXED TELEGRAM BUTTON */
 .floating{
   position:fixed;
-  right:20px;
+  right:22px;
   bottom:20px;
-  z-index:99999;
+  z-index:1000;
 }
 
-.telegram{
-  background:#229ed9;
+.floating .btn{
   border-radius:50px;
-  border:3px solid #fff;
-  padding:15px 24px;
-  box-shadow:0 12px 30px #229ed944;
+  border:2px solid #fff;
+  background:#229ed9;
+  box-shadow:0 6px 24px rgba(16,33,61,.22);
+  padding:13px 21px;
 }
 
-.telegram:hover{
-  background:#168dcc;
+.floating .btn:hover{
+  background:#168ac1;
 }
 
-.telegram svg{
-  width:21px;
-  height:21px;
-  fill:currentColor;
-}
-
-/* MOBILE */
-@media(max-width:800px){
-
+/* RESPONSIVE */
+@media(max-width:760px){
   .grid{
     grid-template-columns:1fr;
   }
 
+  .method{
+    grid-template-columns:1fr;
+  }
+
   .topbar-inner{
+    padding:15px 0;
     flex-direction:column;
     align-items:flex-start;
+    justify-content:center;
+    gap:4px;
   }
 
   .hero{
-    padding-top:50px;
+    padding:52px 0 45px;
+  }
+
+  .hero-text{
+    font-size:15px;
+  }
+
+  .card{
+    padding:23px;
+  }
+
+  .join{
+    padding:35px 20px;
   }
 }
 
 @media(max-width:600px){
+  body{
+    padding-bottom:88px;
+  }
 
   .floating{
     left:12px;
     right:12px;
-    bottom:12px;
+    bottom:10px;
   }
 
-  .telegram{
+  .floating .btn{
     width:100%;
+    min-height:52px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{
+    scroll-behavior:auto;
   }
 
-  .hero-text{
-    font-size:16px;
+  .btn{
+    transition:none;
   }
 }
 </style>
@@ -285,231 +409,184 @@ footer{
 
 <body>
 
-<!-- =========================
-     HEADER
-========================= -->
 <header class="topbar">
-
   <div class="container topbar-inner">
-
     <div class="brand">
       Pankaj Bhardwaj <span>Trader</span>
     </div>
 
     <div class="status">
-      ● Intraday Trading Community
+      <span class="status-dot">●</span>
+      Trading Education &amp; Market Awareness
     </div>
-
   </div>
-
 </header>
-
 
 <main>
 
-<!-- =========================
-     HERO SECTION
-========================= -->
-<section class="hero">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
 
-  <div class="container">
+      <div class="eyebrow">
+        MARKET EDUCATION • RISK AWARENESS
+      </div>
 
-    <div class="eyebrow">
-      INTRADAY TRADING • MARKET LEARNING
+      <h1>
+        Learn the Market.<br>
+        <span>Build Better Habits.</span>
+      </h1>
+
+      <p class="hero-text">
+        Explore intraday trading concepts, market observations
+        and risk-management fundamentals in a learning-focused
+        community with Pankaj Bhardwaj Trader.
+      </p>
+
+      <a class="btn telegram-track"
+         href="https://t.me/+zIiHmz_Q7hA0YWE1"
+         target="_blank"
+         rel="noopener noreferrer">
+        <svg class="telegram-icon" viewBox="0 0 24 24"
+             aria-hidden="true">
+          <path d="M21.6 3.2 2.9 10.4c-1.3.5-1.3 1.2-.2 1.5l4.8 1.5 1.8 5.8c.2.6.1.9.7.9.5 0 .7-.2 1-.9l2.3-2.2 4.2 3.1c.9.5 1.5.3 1.7-.8l3.1-14.7c.3-1.4-.5-2-1.4-1.6ZM8.3 13l10.9-6.9c.5-.3 1-.1.6.2l-8.9 8-.3 3.5-1.4-4.8-1-.3Z"/>
+        </svg>
+        Join Telegram Community
+      </a>
+
+    </div>
+  </section>
+
+  <!-- EDUCATIONAL FEATURES -->
+  <section class="features container">
+    <div class="section-heading">
+      <h2>What You Can Explore</h2>
+      <p>Educational resources focused on understanding the market.</p>
     </div>
 
-    <h1>
-      Trade With Clarity,
-      <br>
-      <span>Learn With Discipline.</span>
-    </h1>
+    <div class="grid">
 
-    <p class="hero-text">
-      Join Pankaj Bhardwaj Trader’s learning-focused community
-      for intraday trading education, market awareness and
-      trading insights.
+      <article class="card">
+        <div class="card-icon">📊</div>
+        <h3>Market Analysis</h3>
+        <p>
+          Learn about market trends, price movements and
+          commonly used technical analysis concepts.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📘</div>
+        <h3>Intraday Learning</h3>
+        <p>
+          Explore intraday trading concepts, trading terminology
+          and structured approaches to market study.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🛡️</div>
+        <h3>Risk Awareness</h3>
+        <p>
+          Understand the importance of risk management,
+          informed decisions and disciplined learning.
+        </p>
+      </article>
+
+    </div>
+
+    <!-- MISSION & METHODOLOGY -->
+    <div class="method">
+
+      <article class="method-card">
+        <h3>Our Mission</h3>
+        <p>
+          Encourage market awareness and help community members
+          develop a stronger understanding of trading concepts
+          through educational content.
+        </p>
+      </article>
+
+      <article class="method-card">
+        <h3>Our Methodology</h3>
+        <p>
+          Focus on learning, market observation, understanding
+          risk and evaluating trading concepts independently.
+          No market outcome is guaranteed.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- JOIN COMMUNITY -->
+  <section class="container">
+    <div class="join">
+
+      <h2>Continue Learning With Us</h2>
+
+      <p>
+        Visit our Telegram community for trading-related
+        educational content and market discussions.
+      </p>
+
+      <a class="btn telegram-track"
+         href="https://t.me/+zIiHmz_Q7hA0YWE1"
+         target="_blank"
+         rel="noopener noreferrer">
+        Join Now on Telegram →
+      </a>
+
+    </div>
+
+    <p class="disclaimer">
+      <strong>Disclaimer:</strong> This website is intended for
+      educational and informational purposes only. It does not
+      provide personalized investment advice or guarantee profits.
+      Stock and derivatives trading involve substantial risk,
+      including possible loss of capital. Make independent,
+      informed decisions and consult a qualified financial
+      professional where appropriate. Any regulated financial
+      services or recommendations must comply with applicable laws
+      and platform policies.
     </p>
-
-    <!-- TELEGRAM BUTTON -->
-    <a
-      class="btn telegram-track"
-      href="https://t.me/+5fc0wtKFQQU2NmNl"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Join Telegram Community →
-    </a>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     FEATURES
-========================= -->
-<section class="container">
-
-  <div class="grid">
-
-    <div class="card">
-
-      <div class="icon">
-        📊
-      </div>
-
-      <h2>
-        Market Analysis
-      </h2>
-
-      <p>
-        Educational market observations and trading concepts.
-      </p>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="icon">
-        ⚡
-      </div>
-
-      <h2>
-        Intraday Learning
-      </h2>
-
-      <p>
-        Intraday setups, risk awareness and trading discipline.
-      </p>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="icon">
-        👥
-      </div>
-
-      <h2>
-        Trading Community
-      </h2>
-
-      <p>
-        Connect with people interested in learning trading.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     JOIN SECTION
-========================= -->
-<section class="container">
-
-  <div class="join">
-
-    <h2>
-      Join the Community Today
-    </h2>
-
-    <p>
-      Click below to join the Telegram learning community.
-    </p>
-
-    <br>
-
-    <!-- TELEGRAM BUTTON -->
-    <a
-      class="btn telegram-track"
-      href="https://t.me/+5fc0wtKFQQU2NmNl"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Join Now on Telegram →
-    </a>
-
-  </div>
-
-
-  <!-- DISCLAIMER -->
-  <p class="disclaimer">
-    Disclaimer: This page is for educational and informational
-    purposes only. Trading involves market risk. Conduct your
-    own research before making any financial decision.
-  </p>
-
-</section>
+  </section>
 
 </main>
 
-
-<!-- =========================
-     FOOTER
-========================= -->
 <footer>
   © 2026 Pankaj Bhardwaj Trader. All Rights Reserved.
 </footer>
 
-
-<!-- =========================
-     FLOATING TELEGRAM BUTTON
-========================= -->
+<!-- FIXED TELEGRAM BUTTON -->
 <div class="floating">
+  <a class="btn telegram-track"
+     href="https://t.me/+zIiHmz_Q7hA0YWE1"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Join Telegram Community">
 
-  <a
-    class="btn telegram telegram-track"
-    href="https://t.me/+5fc0wtKFQQU2NmNl"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Join Telegram Community"
-  >
-
-    <svg
-      viewBox="0 0 24 24"
-      aria-hidden="true"
-    >
-      <path d="M21.6 3.2 2.9 10.4c-1.3.5-1.3 1.2-.2 1.5l4.8 1.5 1.8 5.8c.2.6.1.9.7.9.5 0 .7-.2 1-.9 1.7l2.3 2.2c.5.5.9.5 1.2-.3l1.7-5 4.9 3.6c.9.5 1.5.3 1.7-.8l3.1-14.7c.3-1.4-.5-2-1.4-1.6ZM8.3 13l10.9-6.9c.5-.3 1-.1.6.2l-8.9 8-.3 3.5-1.4-4.8-1-.3Z"/>
+    <svg class="telegram-icon" viewBox="0 0 24 24"
+         aria-hidden="true">
+      <path d="M21.6 3.2 2.9 10.4c-1.3.5-1.3 1.2-.2 1.5l4.8 1.5 1.8 5.8c.2.6.1.9.7.9.5 0 .7-.2 1-.9l2.3-2.2 4.2 3.1c.9.5 1.5.3 1.7-.8l3.1-14.7c.3-1.4-.5-2-1.4-1.6ZM8.3 13l10.9-6.9c.5-.3 1-.1.6.2l-8.9 8-.3 3.5-1.4-4.8-1-.3Z"/>
     </svg>
 
     Join Telegram
-
   </a>
-
 </div>
 
-
-<!-- =========================
-     TELEGRAM CLICK TRACKING
-========================= -->
+<!-- TELEGRAM CLICK TRACKING -->
 <script>
-document.addEventListener("DOMContentLoaded", function(){
-
-  document.querySelectorAll(".telegram-track").forEach(function(button){
-
-    button.addEventListener("click", function(){
-
-      if(typeof window.fbq === "function"){
-
-        /* Meta Pixel Lead Event */
-        window.fbq("track", "Lead");
-
-        /* Custom Telegram Click Event */
-        window.fbq("trackCustom", "TelegramJoinClick");
-
-      }
-
-    });
-
+document.querySelectorAll('.telegram-track').forEach(function(button){
+  button.addEventListener('click', function(){
+    if(typeof window.fbq === 'function'){
+      window.fbq('track', 'Lead');
+      window.fbq('trackCustom', 'TelegramJoinClick');
+    }
   });
-
 });
 </script>
 
 </body>
 </html>
+```
